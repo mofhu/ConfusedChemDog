@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(245,245,240);
+    background-image: url('/static/img/home_background.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+a:link {
+    text-decoration: none;
+    color: #5A6CE6;
+}
+a:visited {
+    text-decoration: none;
+    color: #5A6CE6;
+}
+a:hover {
+    text-decoration: underline;
+    color: #5A6CE6;
+}
+
+h1 {
+    font-family: "微软雅黑","黑体","宋体";
+}
+
+.header {
+    margin: auto;
+    margin-top: 50px;
+    font-size: 36pt;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center; 
+    margin: 0px auto;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
