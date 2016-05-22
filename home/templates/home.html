@@ -1,16 +1,29 @@
+{% extends "base.html" %}
+
 {% load staticfiles %}
-<html>
-    <head>
-        <title>Confused ChemDog Home</title>
-        <link rel="stylesheet" href="{% static 'css/home.css' %}">
-    </head>
-    <body>
-        <div class="header">
-            <img src="../static/img/header.png"/>
-        </div>
-        
-        <div class="copyright">
-            <p>© 2016 OrgLab.
-        </div>
-    </body>
-</html>
+
+{% block title %}Cunfused ChemDog Home{% endblock%}
+
+{% block css %}<link rel="stylesheet" href="{% static 'css/home.css' %}">{% endblock %}
+
+{% block content %}
+<div class="home">
+    <img src="../static/img/xx.png"/>
+</div>
+<div class="slogan">
+    <p>迷茫科研狗的精神家园</p>
+</div>
+<div class="login">
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="username">用户名</label>
+    <input type="text" name="username" value="" id="username">
+    <label for="password">密码</label>
+    <input type="password" name="password" value="" id="password">
+    <input type="submit" value="登录" />
+    <input type="hidden" name="next" value="{{ next|escape }}" />
+    <input type="button" value="注册" onclick="location='/account/register/'"> 
+</form>    
+</div>
+{% endblock %}
+

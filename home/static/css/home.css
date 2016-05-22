@@ -22,18 +22,20 @@ h1 {
     font-family: "微软雅黑","黑体","宋体";
 }
 
-.header {
+.home {
     margin: auto;
     margin-top: 50px;
-    font-size: 36pt;
     text-align: center;
 }
 
-.copyright {
-    text-align: center; 
-    margin: 0px auto;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
+.slogan {
+    font-size: 16pt;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+
+.login {
+    margin-top: 50px;
+    text-align: center;
 }
 
