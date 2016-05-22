@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock%}
+
+{% block content %}
+<div class="register">
+<style type="text/css">
+    h1{text-align: center}
+    p{margin:1em 0}
+    form{margin-top: 50px}
+</style>
+<h1>注册</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <table align="center">
+        <tr>
+            <th align="right"><label for="id_username">用户名</label></th>
+            <td><input id="id_username" maxlength="30" name="username" type="text" /><br></td>
+        </tr>
+        <tr>
+            <th align="right"><label for="id_password1">密码</label></th>
+            <td><input id="id_password1" name="password1" type="password" /><br></td>
+        </tr>
+        <tr>
+            <th align="right"><label for="id_password2">确认密码</label></th>
+            <td><input id="id_password2" name="password2" type="password" /><br></td>
+        </tr>
+        <tr>
+            <td align="center" colspan=2><input type="submit" value="注册" /></td>
+        </tr>
+    </table>
+</form>
+</div>
+{% endblock %}
+ 
