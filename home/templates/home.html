@@ -2,7 +2,7 @@
 
 {% load staticfiles %}
 
-{% block title %}Cunfused ChemDog Home{% endblock%}
+{% block title %}Confused ChemDogs Home - 迷茫的化学狗{% endblock%}
 
 {% block css %}<link rel="stylesheet" href="{% static 'css/home.css' %}">{% endblock %}
 
@@ -22,8 +22,8 @@
     <input type="password" name="password" value="" id="password">
     <input type="submit" value="登录" />
     <input type="hidden" name="next" value="{{ next|escape }}" />
-    <input type="button" value="注册" onclick="location='/account/register/'"> 
-</form>    
+    <input type="button" value="注册" onclick="location='/account/register/'">
+</form>
 </div>
 {% endblock %}
 
